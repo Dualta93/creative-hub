@@ -24,12 +24,29 @@ Includes Tree conkys in top right, top left, and bottom left.
 It will display system and network information. Includes two bash scripts, one to copy conky to an external display if one is connected.
 Another (.startconky) to run in your start up programs to run conky at start up.  
 
-To use this conky set up: `mkdir ~/.config/conky`. Then add all .conf files to this directory. 
-Set up .startconky as a startup application. This will call each of the conky config scripts. 
+1. Install conky
+2. Make conky directory inside ~/.config
+3. Copy *.conf to new conky directory
+4. Add .startconky to startup Applications
+5. Make .country.dat , .region.dat , .city.dat files with your geo information. Save in Home folder. 
+6. Change geo location code in weather.sh to local weather code
+7. Reboot
+8. Enjoy conky
+
+```sh
+user@computer:~$ sudo apt-get install conky
+user@computer:~$ mkdir ~/.config/conky
+user@computer:~$ cp *.conf ~/.config/conky/
+user@computer:~$ echo "country" > .country.dat
+user@computer:~$ echo "region" > .region.dat
+user@computer:~$ echo "city" > .city.dat
+```
 
 <a name="vim"></a>
 
 ## vim
+
+Customised vim with useful tools. 
 
 1. Copy the vimrc to .vimrc in home directory
 2. Copy the vim_bundles directory to the .vim directory
