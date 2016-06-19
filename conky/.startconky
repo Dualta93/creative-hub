@@ -6,4 +6,4 @@ conky -c ~/.config/conky/conky2.conf &
 sleep 10 &&
 conky -c ~/.config/conky/conky_bl.conf &
 sleep 10 &&
-./external_disp.sh
+./.external_disp.sh
